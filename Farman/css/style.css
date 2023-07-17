@@ -1,0 +1,204 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    min-width: 1100px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.header {
+    margin-top: 30px;
+}
+
+.header__name, .header__description {
+    font-size: 40px;
+    text-align: center;
+}
+
+.header__description {
+    font-weight: lighter;
+    margin-bottom: 40px;
+}
+
+.header__contact {
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    align-items: center;
+    gap: 10px;
+    /*height: 16px;*/
+}
+
+.header__contact-item:not(:first-child) {
+    width: 22px;
+}
+
+.social {
+    position: relative;
+    top: -3px;
+    left: -4px;
+    transition: .5s;
+}
+
+.social:hover {
+    transform: scale(1.3);
+    background: white;
+    opacity: 0.7;
+}
+
+.header__contact-item a {
+    width: 100%;
+    height: 100%;
+}
+
+.styled-none {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+svg {
+    position: relative;
+    top: -5px;
+}
+
+a {
+    display: block;
+}
+
+.portfolio {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 40px;
+}
+
+.designs__title, .video-editing {
+    font-size: 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 360px 360px 360px;
+    gap: 10px;
+}
+
+.logo-grid__item img {
+    height: 200px;
+    width: 360px;
+    object-fit: cover;
+}
+
+.logo-grid__item {
+    border: 1px solid #404040;
+}
+
+.posters {
+    margin-top: 80px;
+    font-size: 30px;
+}
+
+.header__contact-text {
+    font-size: 30px;
+}
+
+.web-grid__item img {
+    height: 1300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.video-editing {
+    margin-top: 80px;
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    margin: 75px 0 40px 0;
+}
+
+.overlay:hover {
+    background-color: rgba(0, 0, 0, 75%);
+}
+
+.web-designs {
+    margin-top: 80px;
+    font-size: 30px;
+}
+
+.overlay:hover .overlay__text {
+    /*transform: translate(-50%, -50%);*/
+    margin-top: 165px;
+}
+
+.overlay {
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    /*display: flex;*/
+    overflow: hidden;
+}
+
+.logo-grid__item {
+    position: relative;
+    transition: 0.5s;
+}
+
+.overlay__text {
+    /*margin: 200px auto 10px auto;*/
+    /* visibility: hidden;*/
+    margin-top: 200px;
+    margin-left: 15px;
+    transition: 0.5s;
+    font-size: 20px;
+    color: white;
+}
+
+.soc-media {
+    font-size: 30px;
+    margin-top: 80px;
+}
+
+body {
+    user-select: none;
+}
+
+.video {
+    cursor: pointer;
+    position: relative;
+}
+
+.video-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 0;
+    width: 68px;
+    height: 48px;
+    border: none;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.video-button-shape {
+    fill: #212121;
+    fill-opacity: 0.8;
+    cursor: pointer;
+}
+
+.video:hover .video-button-shape {
+    fill: #ff0000;
+}
+
+.video-button-icon {
+    fill: white;
+}
